@@ -28,9 +28,9 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
     
   for (int k = 0; k < n ; k++)
   {
-    if (*min > *a)
+    if (*min >= *a)
       *min = *a;
-    if (*max < *a)
+    if (*max <= *a)
       *max = *a;
   }
 }
