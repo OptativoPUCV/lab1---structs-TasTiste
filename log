@@ -129,3 +129,9 @@ exercises.c:36:3: error: format not a string literal and no format arguments [-W
 cc1: all warnings being treated as errors
 Compilation failed
 80a51b3
+Thu 09 Mar 2023 09:35:53 PM UTC: 
+ exercises.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  1|6
+total_score: 10/70
+6772624
