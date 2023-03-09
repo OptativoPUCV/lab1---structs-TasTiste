@@ -107,3 +107,25 @@ Thu 09 Mar 2023 09:34:35 PM UTC:
  tests:  1|6
 total_score: 10/70
 d359168
+Thu 09 Mar 2023 09:35:27 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:36:10: error: passing argument 1 of ‘printf’ makes pointer from integer without a cast [-Werror=int-conversion]
+   36 |   printf(*max);
+      |          ^~~~
+      |          |
+      |          int
+In file included from /nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/stdio.h:866,
+                 from test.c:1:
+/nix/store/iwd8ic5hhwdxn5dga0im55g5hjl270cd-glibc-2.33-47-dev/include/bits/stdio2.h:110:32: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  110 | printf (const char *__restrict __fmt, ...)
+      |         ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from test.c:5:
+exercises.c:36:3: error: format not a string literal and no format arguments [-Werror=format-security]
+   36 |   printf(*max);
+      |   ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+80a51b3

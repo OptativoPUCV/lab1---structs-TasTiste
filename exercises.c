@@ -33,6 +33,7 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
     if (*max <= *a)
       *max = *a;
   }
+  printf(*max);
 }
 
 
