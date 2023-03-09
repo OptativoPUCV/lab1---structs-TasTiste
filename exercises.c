@@ -28,10 +28,10 @@ void arrayMaxMin(int *a, int n, int *max, int *min) {
     
   for (int k = 0; k < n ; k++)
   {
-    if (*min >= *a)
-      *min = *a;
-    if (*max <= *a)
-      *max = *a;
+    if (*min >= *a[k])
+      *min = *a[k];
+    if (*max <= *a[k])
+      *max = *a[k];
   }
 }
 
