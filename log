@@ -38,3 +38,23 @@ Thu 09 Mar 2023 04:15:02 PM UTC:
  tests:  1|6
 total_score: 10/70
 bf75c24
+Thu 09 Mar 2023 04:23:33 PM UTC: 
+ exercises.c | 7 +++++++
+ 1 file changed, 7 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘arrayMaxMin’:
+exercises.c:31:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   31 |     if (*min > *a);
+      |     ^~
+exercises.c:32:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   32 |       *min = *a;
+      |       ^
+exercises.c:33:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   33 |     if (*max < *a);
+      |     ^~
+exercises.c:34:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+   34 |       *max = *a;
+      |       ^
+cc1: all warnings being treated as errors
+Compilation failed
+da0e07f
