@@ -189,3 +189,14 @@ exercises.c:80:32: error: ‘null’ undeclared (first use in this function)
 exercises.c:80:32: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 c6f70b3
+Sun 12 Mar 2023 12:01:39 AM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:81:12: error: ‘null’ undeclared (first use in this function)
+   81 |     return null;
+      |            ^~~~
+exercises.c:81:12: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+0821e41
