@@ -178,3 +178,14 @@ Sat 11 Mar 2023 11:53:53 PM UTC:
  tests:  3|4
 total_score: 30/70
 9def345
+Sun 12 Mar 2023 12:01:28 AM UTC: 
+ exercises.c | 11 +++++++++++
+ 1 file changed, 11 insertions(+)
+In file included from test.c:5:
+exercises.c: In function ‘crearVector’:
+exercises.c:80:32: error: ‘null’ undeclared (first use in this function)
+   80 |   if (auxiliar == NULL) return null;
+      |                                ^~~~
+exercises.c:80:32: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+c6f70b3
