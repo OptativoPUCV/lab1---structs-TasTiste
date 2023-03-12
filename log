@@ -200,3 +200,9 @@ exercises.c:81:12: error: ‘null’ undeclared (first use in this function)
 exercises.c:81:12: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 0821e41
+Sun 12 Mar 2023 12:01:51 AM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  4|3
+total_score: 40/70
+8bd7ab9
