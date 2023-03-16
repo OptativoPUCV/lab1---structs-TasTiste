@@ -110,7 +110,7 @@ int obtenerValor(Vector * v, int i) {
   valor = v->datos[i];
   return valor;
   
-   return 0;
+  return 0;
 }
 
 /*
@@ -119,7 +119,12 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-
+  int suma = 0;
+  for(int k = 0; k < capacidad ; k++)
+    {
+      suma =+ a[k] + b[k];
+    }
+  c = suma;
 }
 
 /*

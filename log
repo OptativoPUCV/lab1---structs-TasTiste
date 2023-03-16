@@ -229,3 +229,21 @@ Thu 16 Mar 2023 03:33:38 PM UTC:
  tests:  6|2
 total_score: 50/70
 0096a17
+Thu 16 Mar 2023 03:41:59 PM UTC: 
+ exercises.c | 7 ++++++-
+ 1 file changed, 6 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:123:22: error: ‘capacidad’ undeclared (first use in this function)
+  123 |   for(int k = 0; k < capacidad ; k++)
+      |                      ^~~~~~~~~
+exercises.c:123:22: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:125:13: error: wrong type argument to unary plus
+  125 |       suma =+ a[k] + b[k];
+      |             ^
+exercises.c:127:5: error: assignment to ‘Vector *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  127 |   c = suma;
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+4c58523
