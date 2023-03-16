@@ -120,9 +120,10 @@ actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
   int suma = 0;
-  for(int k = 0; k < capacidad ; k++)
+  
+  for(int k = 0; k < a->capacidad ; k++)
     {
-      suma =+ a[k] + b[k];
+      suma = a[k] + b[k];
     }
   c = suma;
 }

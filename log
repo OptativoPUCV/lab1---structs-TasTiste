@@ -247,3 +247,19 @@ exercises.c:127:5: error: assignment to ‘Vector *’ from ‘int’ makes poin
 cc1: all warnings being treated as errors
 Compilation failed
 4c58523
+Thu 16 Mar 2023 03:43:31 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:126:19: error: invalid operands to binary + (have ‘Vector’ and ‘Vector’)
+  126 |       suma = a[k] + b[k];
+      |              ~~~~ ^ ~~~~
+      |               |      |
+      |               Vector Vector
+exercises.c:128:5: error: assignment to ‘Vector *’ from ‘int’ makes pointer from integer without a cast [-Werror=int-conversion]
+  128 |   c = suma;
+      |     ^
+cc1: all warnings being treated as errors
+Compilation failed
+0aee097
