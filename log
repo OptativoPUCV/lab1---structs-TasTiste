@@ -263,3 +263,19 @@ exercises.c:128:5: error: assignment to ‘Vector *’ from ‘int’ makes poin
 cc1: all warnings being treated as errors
 Compilation failed
 0aee097
+Thu 16 Mar 2023 03:43:48 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:126:14: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  126 |       suma = *a[k] + *b[k];
+      |              ^~~~~
+exercises.c:126:22: error: invalid type argument of unary ‘*’ (have ‘Vector’)
+  126 |       suma = *a[k] + *b[k];
+      |                      ^~~~~
+exercises.c:128:8: error: incompatible types when assigning to type ‘Vector’ from type ‘int’
+  128 |   *c = suma;
+      |        ^~~~
+Compilation failed
+81232df
