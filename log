@@ -279,3 +279,14 @@ exercises.c:128:8: error: incompatible types when assigning to type ‘Vector’
       |        ^~~~
 Compilation failed
 81232df
+Thu 16 Mar 2023 03:45:17 PM UTC: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:
+exercises.c: In function ‘sumaV’:
+exercises.c:128:12: error: ‘k’ undeclared (first use in this function)
+  128 |   c->datos[k] = suma;
+      |            ^
+exercises.c:128:12: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+373ff97

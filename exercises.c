@@ -123,9 +123,10 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
   
   for(int k = 0; k < a->capacidad ; k++)
     {
-      suma = *a[k] + *b[k];
+      suma = a->datos[k] + b->datos[k];
     }
-  *c = suma;
+  c->datos[k] = suma;
+  
 }
 
 /*
